@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>Villa Agency - Real Estate HTML5 Template</title>
+    <title>Pemakaman Al-Jinan</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{ asset('TemplateClient/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -48,17 +48,17 @@ https://templatemo.com/tm-591-villa-agency
       <div class="row">
         <div class="col-lg-8 col-md-8">
           <ul class="info">
-            <li><i class="fa fa-envelope"></i> info@company.com</li>
-            <li><i class="fa fa-map"></i> Sunny Isles Beach, FL 33160</li>
+            <li><i class="fa fa-envelope"></i>{{ $user->email }}</li>
+            <li><i class="fa fa-map"></i>{{ $tpu->alamat }}</li>
           </ul>
         </div>
         <div class="col-lg-4 col-md-4">
-          <ul class="social-links">
+          {{-- <ul class="social-links">
             <li><a href="#"><i class="fab fa-facebook"></i></a></li>
             <li><a href="https://x.com/minthu" target="_blank"><i class="fab fa-twitter"></i></a></li>
             <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          </ul>
+          </ul> --}}
         </div>
       </div>
     </div>
@@ -70,7 +70,7 @@ https://templatemo.com/tm-591-villa-agency
 
     @yield('content')
 
-   
+
   {{-- Footer --}}
   @include('ClientView.Templates.footer')
 
@@ -78,5 +78,5 @@ https://templatemo.com/tm-591-villa-agency
   <!-- Bootstrap core JavaScript -->
   @include('ClientView.Templates.scripts')
 
-  </body>
+</body>
 </html>
